@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header  from './components/Header/header'
 import Navbar from './components/Navbar/Navbar'
+import Desc from './components/Description/Desc'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <div className='app'>
              <Header />
              <Navbar />
+             <Desc />
 
           
       </div>
