@@ -45,7 +45,7 @@
   }
 
   .main-heading h1 {
-    top: 150px; /* Adjust heading position */
+    top:0px; /* Adjust heading position */
     font-size: 8rem; /* Smaller heading on mobile */
   }
 
@@ -63,12 +63,12 @@
   }
 
   .main-heading h1 {
-    top: 400px; /* Adjust heading position further */
+    top: 300px; /* Adjust heading position further */
     font-size: 5rem; /* Even smaller heading on extra small devices */
   }
 
   .main-heading p {
-    top: 510px; /* Adjust paragraph position further */
+    top: 390px; /* Adjust paragraph position further */
     font-size: 1.2rem; /* Smaller paragraph text */
   }
 }

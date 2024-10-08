@@ -21,20 +21,14 @@
 }
 
 .logo h1 span {
-  color: black; /* Color for the 'Fix' part of the logo */
+  color: black;
 }
 
-/* Hamburger Menu Icon */
-.menu-toggle {
-  display: none; /* Initially hidden */
-  cursor: pointer; /* Pointer for the toggle */
-}
-
-/* Navigation Links */
+/* Center Navigation Links */
 .navbar {
-  display: flex;
-  justify-content: center; /* Center the nav links */
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-links {
@@ -59,131 +53,99 @@
 .icon-links {
   display: flex;
   gap: 15px;
+  color:white !important;
 }
 
 .icon-link {
   text-decoration: none;
-  font-size: 1.5rem; /* Size of the icons */
-  color: #333;
+  font-size: 1.5rem;
+  color:white;
   transition: color 0.3s ease;
 }
 
 .icon-link:hover {
   color: black;
-  font-weight: 200;
 }
 
 /* Mobile View */
+.menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column; /* Stack the elements */
-    padding: 15px;
-  }
-
-  .logo {
-    text-align: center; /* Center the logo */
-    margin-bottom: 15px; /* Space below the logo */
-  }
-
-  .menu-toggle {
-    display: block; /* Show the toggle on mobile */
-    font-size: 2rem; /* Size of the menu icon */
-    color: white;
-    margin: 0 auto; /* Center the toggle */
-  }
-
   .navbar {
-    display: none; /* Hide navbar initially */
-    flex-direction: column; /* Stack items vertically */
-    width: 100%; /* Full width */
-    position: fixed; /* Fix the position to the top */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
-    padding: 20px 0; /* Padding for the dropdown */
-    z-index: 1000; /* Make sure it appears above other content */
-    transition: max-height 0.3s ease; /* Smooth transition */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
   }
 
   .navbar.active {
-    display: flex; /* Show the menu */
-  }
-
-  .menu-header {
-    display: flex;
-    justify-content: flex-end; /* Align close icon to the right */
-    padding: 0 20px; /* Padding for the close icon */
-  }
-
-  .close-icon {
-    font-size: 2rem; /* Size of the close icon */
-    color: white; /* Color of the close icon */
-    cursor: pointer; /* Pointer for close icon */
+    transform: translateX(0);
   }
 
   .nav-links {
-    flex-direction: column; /* Stack items */
-    gap: 15px;
-    align-items: center; /* Center the items */
-    margin-top: 15px; /* Space above the links */
-  }
-
-  .nav-link {
-    font-size: 1rem;
-  }
-
-  .icon-links {
-    margin-top: 15px;
-  }
-}
-
-/* Tablet View */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .header {
-    padding: 15px 30px;
-  }
-
-  .logo h1 {
-    font-size: 1.9rem;
-  }
-
-  .nav-link {
-    font-size: 2.05rem;
-  }
-
-  .nav-links {
-    gap: 15px;
-  }
-
-  .icon-links {
-    gap: 10px;
-  }
-}
-
-/* Desktop View */
-@media (min-width: 1025px) {
-  .header {
-    padding: 20px 60px;
-  }
-
-  .logo h1 {
-    font-size: 2rem;
-  }
-
-  .nav-links {
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
   }
 
   .nav-link {
-    font-size: 1.8rem;
-  }
-
-  .icon-link {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: white;
   }
 
+  .menu-toggle {
+    display: block;
+    z-index: 20; /* Ensure the toggle icon is above the menu */
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    z-index: 30; /* Ensure it's above the list items */
+  }
+
   .icon-links {
-    gap: 20px;
+    display: none;
+    color: #eaeaea !important;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .navbar {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    transform: none;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
   }
 }
