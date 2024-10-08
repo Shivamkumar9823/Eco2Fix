@@ -1,0 +1,46 @@
+.why-us-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+  
+  .why-us-item {
+    flex: 1;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: transparent;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-top: 2px solid white;
+    border-radius: 0;
+    height: 100px;
+    margin-bottom: 100px;
+  }
+  .why-us-item p{
+    margin: 20px;
+
+  }
+
+
+  .whyus-heading{
+    position: absolute;
+    left: 20px;
+    color:black !important;
+  }
+
+  @media (max-width: 768px) {
+    .why-us-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .why-us-item {
+      width: 100%;
+    }
+  }
+  

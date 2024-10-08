@@ -4,7 +4,7 @@ import './desc.css'
 const Desc = () => {
   return (
     <div className="description">
-      <h2>Welcome to EcoCycle</h2>
+      <h2 className='description-heading'>Welcome to EcoCycle</h2>
       <p>EcoCycle is a platform that connects shopkeepers and individuals to exchange old electronics in a convenient and environmentally friendly way. Our mission is to reduce electronic waste and promote sustainable living.</p>
       <h2>How it Works</h2>
       <ol>

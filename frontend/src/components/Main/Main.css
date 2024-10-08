@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.Main_img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  width: 100%; /* Ensures the container takes up full width */
+  margin-bottom: 100px;
+}
+
+.Main_img img {
+  width: 20vw; /* Set a responsive width */
+  height: auto;
+  transition: transform 0.1s ease-out;
+
+}
+
+.main-heading h1 {
+  position: absolute;
+  top: 300px;
+  left: 20px;
+  font-size: min(13rem, 12vw); /* Adjust size responsively */
+  color: white;
+  font-family: "Crimson Text";
+}
+
+.main-heading p {
+  position: absolute;
+  top: 530px;
+  left: 30vw;
+  font-size: min(2rem, 5vw); /* Adjust size responsively */
+  color: white;
+  font-family: "Crimson Text";
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+  .Main_img {
+    justify-content: space-between; /* Keep images spaced horizontally */
+  }
+
+  .Main_img img {
+    width: 45vw; /* Reduce the image size for mobile */
+  }
+
+  .main-heading h1 {
+    top: 150px; /* Adjust heading position */
+    font-size: 8rem; /* Smaller heading on mobile */
+  }
+
+  .main-heading p {
+    top: 350px; /* Adjust paragraph position */
+    left: 10vw; /* Ensure it stays within viewport */
+    font-size: 1.5rem; /* Smaller paragraph text on mobile */
+  }
+}
+
+/* Extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .Main_img img {
+    width: 40vw; /* Further reduce image size for extra small devices */
+  }
+
+  .main-heading h1 {
+    top: 400px; /* Adjust heading position further */
+    font-size: 5rem; /* Even smaller heading on extra small devices */
+  }
+
+  .main-heading p {
+    top: 510px; /* Adjust paragraph position further */
+    font-size: 1.2rem; /* Smaller paragraph text */
+  }
+}

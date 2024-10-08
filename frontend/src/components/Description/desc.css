@@ -1,14 +1,17 @@
 .description {
+    margin-top: 200px;
     padding: 20px;
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
+    background-color:transparent;
+    /* border: 1px solid #ddd; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   }
   
   .description h2 {
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 10px;
+    color: black;
   }
   
   .description p {
@@ -47,3 +50,5 @@
     color: #4CAF50;
     margin-right: 10px;
   }
+
+  

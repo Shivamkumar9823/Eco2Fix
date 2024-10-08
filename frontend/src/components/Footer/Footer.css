@@ -1,0 +1,81 @@
+/* Basic Footer Styles */
+.footer {
+    background-color:transparent;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .footer-container div {
+    flex: 1;
+    margin: 1rem;
+  }
+  
+  /* Footer section headings */
+  .footer h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #ecf0f1;
+  }
+  
+  /* Footer paragraphs and links */
+  .footer p, .footer a {
+    font-size: 1rem;
+    color: #bdc3c7;
+    text-decoration: none;
+    margin: 0.5rem 0;
+  }
+  
+  .footer a:hover {
+    color: #3498db;
+  }
+  
+  /* Footer Links Styling */
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer Bottom Area */
+  .footer-bottom {
+    border-top: 1px solid #7f8c8d;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive Styling for Footer */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-container div {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer h3 {
+      font-size: 1rem;
+    }
+  
+    .footer p, .footer a {
+      font-size: 0.875rem;
+    }
+  }
+  

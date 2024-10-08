@@ -10,37 +10,32 @@ import './Navbar.css'
 const Navbar = () => {
   return (
     <div className='nav'> 
-
-
-   <div class="hexagon">
-      <div class="circle">
-          <RiTeamFill className="icon-container"/>
-      </div>
-      
-   </div>
-   <div class="hexagon">
+      <div className="container">
+          <div class="circle">
+              <RiTeamFill className="icon-container"/>
+          </div>
+      </div>  
+   <div class="container">
       <div class="circle">
       <GoGoal  className="icon-container"/>
       </div>
    </div>
-   <div class="hexagon">
+   <div class="container">
       <div class="circle">
       <SiElectron className="icon-container"/>
       </div>
    </div>
-
-
-   <div class="hexagon">
+   <div class="container">
      <div class="circle">
      <GrDeliver className="icon-container"/>
      </div>
    </div>
-   <div class="hexagon">
+   <div class="container">
      <div class="circle">
      <HiOutlineSpeakerphone className="icon-container" />
      </div>
    </div>
-   <div class="hexagon">
+   <div class="container">
       <div class="circle">
       <RiExchangeDollarFill className="icon-container" />
       </div>
